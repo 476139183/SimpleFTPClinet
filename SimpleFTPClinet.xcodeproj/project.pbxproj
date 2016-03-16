@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		09F11A081BF75539000C2ABC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F11A071BF75539000C2ABC /* main.m */; };
 		09F11A0B1BF75539000C2ABC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F11A0A1BF75539000C2ABC /* AppDelegate.m */; };
-		09F11A0E1BF75539000C2ABC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F11A0D1BF75539000C2ABC /* ViewController.m */; };
+		09F11A0E1BF75539000C2ABC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F11A0D1BF75539000C2ABC /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		09F11A111BF75539000C2ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F11A0F1BF75539000C2ABC /* Main.storyboard */; };
 		09F11A131BF7553A000C2ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F11A121BF7553A000C2ABC /* Assets.xcassets */; };
 		09F11A161BF7553A000C2ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F11A141BF7553A000C2ABC /* LaunchScreen.storyboard */; };
 		09F11A211BF7553A000C2ABC /* SimpleFTPClinetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F11A201BF7553A000C2ABC /* SimpleFTPClinetTests.m */; };
 		09F11A2C1BF7553A000C2ABC /* SimpleFTPClinetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F11A2B1BF7553A000C2ABC /* SimpleFTPClinetUITests.m */; };
+		09F11A3A1BF75558000C2ABC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F11A391BF75558000C2ABC /* CFNetwork.framework */; };
+		09F11A3D1BF75576000C2ABC /* FTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F11A3C1BF75576000C2ABC /* FTPManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		09F11A271BF7553A000C2ABC /* SimpleFTPClinetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleFTPClinetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F11A2B1BF7553A000C2ABC /* SimpleFTPClinetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleFTPClinetUITests.m; sourceTree = "<group>"; };
 		09F11A2D1BF7553A000C2ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F11A391BF75558000C2ABC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		09F11A3B1BF75576000C2ABC /* FTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPManager.h; sourceTree = "<group>"; };
+		09F11A3C1BF75576000C2ABC /* FTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F11A3A1BF75558000C2ABC /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 		09F119FA1BF75539000C2ABC = {
 			isa = PBXGroup;
 			children = (
+				09F11A391BF75558000C2ABC /* CFNetwork.framework */,
 				09F11A051BF75539000C2ABC /* SimpleFTPClinet */,
 				09F11A1F1BF7553A000C2ABC /* SimpleFTPClinetTests */,
 				09F11A2A1BF7553A000C2ABC /* SimpleFTPClinetUITests */,
@@ -105,6 +112,8 @@
 				09F11A0A1BF75539000C2ABC /* AppDelegate.m */,
 				09F11A0C1BF75539000C2ABC /* ViewController.h */,
 				09F11A0D1BF75539000C2ABC /* ViewController.m */,
+				09F11A3B1BF75576000C2ABC /* FTPManager.h */,
+				09F11A3C1BF75576000C2ABC /* FTPManager.m */,
 				09F11A0F1BF75539000C2ABC /* Main.storyboard */,
 				09F11A121BF7553A000C2ABC /* Assets.xcassets */,
 				09F11A141BF7553A000C2ABC /* LaunchScreen.storyboard */,
@@ -270,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F11A3D1BF75576000C2ABC /* FTPManager.m in Sources */,
 				09F11A0E1BF75539000C2ABC /* ViewController.m in Sources */,
 				09F11A0B1BF75539000C2ABC /* AppDelegate.m in Sources */,
 				09F11A081BF75539000C2ABC /* main.m in Sources */,
@@ -498,6 +508,7 @@
 				09F11A321BF7553A000C2ABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09F11A331BF7553A000C2ABC /* Build configuration list for PBXNativeTarget "SimpleFTPClinetTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +517,7 @@
 				09F11A351BF7553A000C2ABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09F11A361BF7553A000C2ABC /* Build configuration list for PBXNativeTarget "SimpleFTPClinetUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +526,7 @@
 				09F11A381BF7553A000C2ABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
