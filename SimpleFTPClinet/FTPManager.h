@@ -23,7 +23,7 @@ enum {
 
 - (void)directoryListingFinishedWithSuccess:(NSArray *)arr;
 
--(void)ftpError:(NSString *)err;
+- (void)ftpError:(NSString *)err;
 
 @end
 
@@ -55,8 +55,7 @@ enum {
  */
 - (void)listRemoteDirectory:(NSString *)path;
 
-
-@property (nonatomic, assign) id<FTPManagerDelegate>       delegate;
+@property (nonatomic, assign) id<FTPManagerDelegate> delegate;
 
 @end
 
